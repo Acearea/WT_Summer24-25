@@ -1,1 +1,35 @@
 Java Script - 27th Aug 2025
+JS is needed to create dynamic and interactive html page
+it is lightweight programing language
+no compiler is necessary
+can be run on webpage or console 
+known as ECMASCRIPT
+has many builtin libraries and frameworks
+used for mobile app deevelopment desktop app development and game development
+for both front end and back end
+pop ups, notifications, validation
+<script> tag is needed for internal JS scriptind
+tag can be placed in both body and head
+and can also be externally scripted
+<script src="JScriptName.js"></script>
+benefits of JS- modularity and load reduction by seperation of JS to html, reuasbility (reusable js code), easier to maintain, speed up page loading.
+internal syntax
+<head>
+  <script>
+  </script>
+</head>
+or,
+<body>
+  <script>
+  </script>
+</body>
+external syntax
+<head>
+  <script src="mySript.js"></script>
+</head
+or from external server
+<head>
+  <script src="https://wwww3school.com/js/mySript.js"></script>
+</head
+
+JS variables and DataTypes
