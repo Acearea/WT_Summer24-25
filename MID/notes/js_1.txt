@@ -33,3 +33,35 @@ or from external server
 </head
 
 JS variables and DataTypes
+js is a loosely typed language - variables are not restriced to storing any one specific datatype
+var keyword is used to declare variables - has default value of undefined
+'=' assignment operator
+unique name - must begin with letter, _ or $, it is case sensetive can contain letters, numbers, _ $
+can redeclare dosent remove value (reiitialization will chage data of variable to new data)
+boolean number string undefined object function (dataTypes) - (no int float only number) (objects and functions are datatypes)
+only has float type numbers - 64bit floating point -accurate upto 15 digits - up to 17 digits of decimal but fp arithmatic is not 100% accurate
+NaN?
+can be both single or double quotation but order must be maintained and quotation can be layerd i.e "Zahin 'Bin' Saeed" or 'zz "BB" sS'
+NULL is empty and explicit var x = NULL .... Undefined is also empty but implicit var x
+
+output
+  Alert - pop up box
+  Console - background
+  Doccument - html page
+  into html
+<body>
+  <script>
+    alert("a output");
+    console.log("c output");
+    document.wrie("d output");
+  </script>
+</body>
+
+*= /= -= += %= **=
+x=y  x=y
+x+=y x=x+y
+x-=y x=x-y
+x*=y x=x*y
+x/= x=x*y
+x%=y x=x%y
+x**=y x=x**y
