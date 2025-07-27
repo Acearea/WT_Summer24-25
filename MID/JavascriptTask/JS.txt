@@ -1,0 +1,61 @@
+console.log("test");
+var subjects = [ "OS", "MIS", "WT", "COA"]
+var Marks = [90, 93, 95, 91]
+student = { name:"Zahin", age:25, subj:subjects, mrks:Marks}
+
+console.log("\nStudent Info");
+console.log("Name: "+student.name);
+console.log("Age: "+student.age);
+console.log("\nAdult or not?");
+if (student.age>=18) {console.log("Student is an adult");}
+else {console.log("Student is a minor");}
+var passThreshold = 40;
+var pass = true;
+for(var i = 0; i < 4; i++){
+    if(Marks[i]<40){pass=false;}
+    else{pass=true;}
+}
+if(pass){console.log("Student: "+student.name+" has passed all subjects")}
+console.log("\nMarks Obtained")
+
+for(var i = 0; i < 4; i++){
+    console.log("Subject: "+student.subj[i]+" - " +student.mrks[i]);
+}
+
+
+console.log("\nVarriables");
+var x = 16;
+var y = 4;
+var results = 0;
+console.log("x: "+x);
+console.log("y: "+y);
+results = x+y;
+console.log("Results of Addition = " + results);
+results = x-y;
+console.log("Results of Subtration = " + results);
+results = x*y;
+console.log("Results of Multiplication = " + results);
+results = x/y;
+console.log("Results of Division= " + results);
+results = x%y;
+console.log("Results of Modulation = " + results);
+results = x**y;
+console.log("Results of Exponentiation = " + results);
+
+console.log("\nFunction");
+function greetUser(Name){
+    console.log("Hello "+ student.name +"!");
+}
+greetUser("Zahin");
+subMarkConcat = ""
+for(var i = 0; i < 4; i++){
+    subMarkConcat +=student.subj[i];
+    subMarkConcat +=": ";
+    subMarkConcat +=student.mrks[i];
+    subMarkConcat +="| ";
+}
+
+
+function showMessage(){
+    alert("Name: "+ student.name + "\n" + subMarkConcat);
+}

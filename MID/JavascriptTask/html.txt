@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "StudentProfile.js"></script>
+    </head>
+    <body>
+        <h1>This is a student profile and status checker</h1>
+        <h2>Check console for curent student information</h2>
+        <button onclick = "showMessage()">See Results</button>
+    </body>
+</html>
