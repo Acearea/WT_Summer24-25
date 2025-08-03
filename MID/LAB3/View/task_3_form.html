@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="..\JS\task_3_valid.js"></script>
+            <link rel="stylesheet" type="text\css" href="..\CSS\task_3_style.css">
+        </head>
+        <body>
+            <div class="Form">
+                <table class="form_input_table">
+                    <tr><td><h2 class="Header">Donor Information Form</h2></td></tr>
+                    <tr><td>First Name</td></tr>
+                    <tr><td><input type="text" name="Dono_Name"></td></tr>
+                    <tr><td>Email</td></tr>
+                    <tr><td><input type="text" name="Email_Input"></td></tr>
+                    <tr><td>Phone Number</td></tr>
+                    <tr><td><input type="text" name="Phone_Number"></td></tr>
+                    <tr><td>Password</td></tr>
+                    <tr><td><input type="text" name="Pass_Input"></td></tr>
+                    <tr><td>Confirm Password</td></tr>
+                    <tr><td><input type="text" name="Pass_Confirm"></td></tr>
+                    <tr><td>Donation Ammount</td></tr>
+                    <tr><td>
+                        <input type="radio" name="Payment_Ammount" id="1">None
+                        <input type="radio" name="Payment_Ammount" id="2">1000 BDT
+                        <input type="radio" name="Payment_Ammount" id="3">2000 BDT
+                        <input type="radio" name="Payment_Ammount" id="4">5000 BDT
+                        <input type="radio" name="Payment_Ammount" id="4">10000 BDT
+                    </td></tr>
+                    <tr><td>Amount</td></tr>
+                    <tr><td><input type="text" name="Ammount_Field"></td></tr>
+                    <tr><td>Payment Method</td></tr>
+                    <tr><td>
+                        <input type="radio" name="Payment_Method" id="1">Cash
+                        <input type="radio" name="Payment_Method" id="2">Cheque
+                        <input type="radio" name="Payment_Method" id="3">Bonds
+                        <input type="radio" name="Payment_Method" id="4">Mobile/Online Banking
+                    </td></tr>
+                    <tr><td><input type="checkbox" name="" id="">I am intrested in repeat donations.</td></tr>
+                    <tr></tr>
+                    <tr><td><h2 class="Header">Additional Information</h2></td></tr>
+                    <tr><td><input type="checkbox" name="" id="">I would like to remain anonymus.</td></tr>
+                    <tr><td>Comments</td></tr>
+                    <tr><td><textarea rows="2" cols="" name="Comments_Box"></textarea></td></tr>
+                </table> 
+                <input type="button" value="Reset" name="Reset"> <input type="button" value="Submit" name="Submit">
+            </div>
+        </body>
+    </html>
