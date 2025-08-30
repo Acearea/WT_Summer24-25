@@ -2,15 +2,15 @@
 <html>
     <head>
         <!--Style CSS Link-->
-        <link rel="stylesheet" href="../CSS/loginStyl.css">
+        <link rel="stylesheet" href="../CSS/registrationStyl.css">
     </head>
     <body>
-        <div class = "Hedder">
+        <div class = "Header">
             <img src="../Resources/Logo.png" alt="Car Parts Logo" class="logo">
             <h1>Car Parts</h1>
         </div>
         <!--Login Form-->
-        <form action="" method="post" class="loginForm">
+        <form action="" method="post" class="registerForm">
             <h3 class="formHeader">Register</h3>
             <!--Username-->
             <label for="Username">Username</label><br>
@@ -30,26 +30,23 @@
             <span class="errorSpan" id = "EmailErr"></span><br>
             <!--Phone Number-->
             <label for="PhoneNumber">Phone Number</label><br>
-            <input type="number" class = "inputField" name = "PNumber" placeholder="01........."><br>
-            <span class="errorSpan" id = "phnNumErr"></span><br>
+            <input type="text" class = "inputField" name = "PNumber" placeholder="01........."><br>
+            <span class="errorSpan" id = "PhnNumErr"></span><br>
             <!--Billing Address-->
             <label for="Billing Address">Address</label><br>
             <input type="text" class="inputField" name="BAddress" id="BAddress" placeholder="House No. Road No. , Area, City, District"><br>
-            <span class="errorSpan" id = "AddressErr"></span><br>
+            <span class="errorSpan" id = "BAddressErr"></span><br>
 
             
             <!--Submit Button-->
             <button type="submit" class="submitBtn">Register</button>
         </form>
         <!--Registration Link-->
-        <p class="registerText">
-            <a href = "registrationVw.php">Don't have an account? Register Here</a> 
+        <p class="loginText">
+            <a href = "loginVw.php">Already have an account? Login Here</a> 
         </p>
         <!--Validation PHP Link-->
         <?php include"../PHP/registrationP.php"?>
-
-        <h1>Test</h1> 
-        <a href="loginVw.php"> Back </a>
         
     </body>
 </html>

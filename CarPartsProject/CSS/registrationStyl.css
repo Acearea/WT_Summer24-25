@@ -1,0 +1,73 @@
+div.Header{
+    background-color: rgba(55, 40, 212, 0.658);
+    width: 250px;
+    margin: 5px 0;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px; 
+    display: flex;
+    align-items: left;
+    padding: 20px;
+}
+
+div.Header img.logo{
+    height: 50px;
+    margin-right: 15px;
+}
+
+.inputField{
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin: 5px 0;
+    width: 250px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.inputField::placeholder{
+    color: darkgray;
+    opacity: 1;
+}
+.registerForm{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.errorSpan{
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+.formHeader{
+   display: block;
+   text-align: center;
+   padding-bottom: 5px;
+   font-weight: bold;
+   border-bottom: 2px solid black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.submitBtn{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgba(55, 40, 212, 0.658);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.submitBtn:hover{
+    background-color: rgba(18, 6, 88, 0.658) ;
+}

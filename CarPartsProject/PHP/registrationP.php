@@ -3,8 +3,8 @@
 <head></head>
 <body>
     <?php
-        $uName=$pass="";
-        $uNameErr=$passErr="";
+        $uName=$pass=$cPass=$email=$phnNum=$bAddress="";
+        $uNameErr=$passErr=$cPassErr=$emailErr=$phnNumErr=$bAddressErr="";
         function clean_input($data)
         {
             $data=trim($data);
@@ -42,10 +42,52 @@
                     $passErr="Password must contain at least one special character";
                 }
             }
+
+            if(empty($_POST["ConfirmPass"])){
+                $cPassErr="Please confirm your password";
+            }
+            else{
+                $cPass=clean_input($_POST["ConfirmPass"]);
+                if($pass !== $cPass){
+                    $cPassErr = "Does not match Password";
+                }
+            }
+
+            if(empty($_POST["Email"])){
+                $emailErr="Email is required";
+            }
+            else{
+                $email=clean_input($_POST["Email"]);
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                    $emailErr= "Invalid Email address";
+                }
+            }
+
+            if(empty($_POST["PNumber"])){
+                $phnNumErr="Phone number is required";
+            }
+            else{
+                $phnNum=clean_input($_POST["Pnumber"]);
+                if(!preg_match("/^01\d{9}$/", $phnNum)){
+                    $phnNumErr="Phone number is invalid";
+                }
+            }
+
+            if(empty($_POST["BAddress"])){
+                $bAddressErr="Address is required";
+            }
+            else{
+                $bAddress=clean_input($_POST["BAddress"]);
+            }
+
         }
         echo "<script>
             document.getElementById('UNameErr').innerText = '$uNameErr';
             document.getElementById('PassErr').innerText = '$passErr';
+            document.getElementById('CPassErr').innerText = '$cPassErr';
+            document.getElementById('EmailErr').innerText = '$emailErr';
+            document.getElementById('PhnNumErr').innerText = '$phnNumErr';
+            document.getElementById('BAddressErr').innerText = '$bAddressErr';
             </script>";
     ?>
 </body>
