@@ -27,6 +27,7 @@
         <p class="registerText">
             <a href = "registrationVw.php">Don't have an account? Register Here</a> 
         </p>
+        <span class="errorSpan" id="confirm"></span>
         <!--Validation PHP Link-->
         <?php include"../PHP/loginP.php"?>    
     </body>

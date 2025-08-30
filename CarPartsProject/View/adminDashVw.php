@@ -8,7 +8,7 @@
 
         </div>
         <div class="home">
-            
+            <p>Test</p>
         </div>
         <?php include "../PHP/adminDashP.php" ?>
     </body>
