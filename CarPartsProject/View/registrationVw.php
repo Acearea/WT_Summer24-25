@@ -18,7 +18,7 @@
             <span class="errorSpan" id = "UNameErr"></span><br>
             <!--Password-->
             <label for="Password">Password</label><br>
-            <input type="password" class="inputField" name="Password" id="Password" placeholder="Password"><br>
+            <input type="password" class="inputField" name="Password" id="Password" placeholder="Password" title="Password must be 8-16 Characters long and contain at laest one number, letter and special character"><br>
             <span class="errorSpan" id = "PassErr"></span><br>
             <!--Confirm Password-->
             <label for="ConfirmPass">Confirm Password</label><br>

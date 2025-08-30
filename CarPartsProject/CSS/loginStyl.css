@@ -6,7 +6,7 @@ div.Hedder{
     border-style: solid;
     border-radius: 5px; 
     display: flex;
-    align-items: left;
+    align-items: center;
     padding: 20px;
 }
 
