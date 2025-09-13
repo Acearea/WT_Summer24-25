@@ -13,10 +13,7 @@
             <form action="Approve_orders_view.php" method="post">
                 <button type="submit" class="btn">Approve/Reject purchase Order</button>
             </form>
-            <form action="Supplier_report.php" method="POST">
-                <button type="submit" class="btn">Generate Suplier Performance Report</button>
-            </form>
-            <form action="Set_record.php" method="POST">
+            <form action="Reorder_levels_view.php" method="POST">
                 <button type="submit" class="btn">Set Parts Reorder Levels</button>
             </form>
             <form action="Adjust_price.php" method="POST">
@@ -29,7 +26,7 @@
                 <button type="submit" class="btn">Generate Summary Reports</button>
             </form>
             <form action="Stock_categories.php" method="POST">
-                <button type="submit" class="btn">Manage Stock Categories</button>
+                <button type="submit" class="btn">Manage Parts Stock Categories</button>
             </form>
 
         </div>
