@@ -65,40 +65,7 @@
                 }
             }
 
-            if(empty($_POST["Email"])){
-                $emailErr="Email is required";
-                    $regValid=false;
-            }
-            else{
-                $email=clean_input($_POST["Email"]);
-                if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                    $emailErr= "Invalid Email address";
-                    $regValid=false;
-                }
-            }
-
-            if(empty($_POST["PNumber"])){
-                $phnNumErr="Phone number is required";
-                    $regValid=false;
-            }
-            else{
-                $phnNum=clean_input($_POST["PNumber"]);
-                /*if(!preg_match("/^01\d{9}$/", $phnNum)){
-                    $phnNumErr="Phone number is invalid";
-                }*/
-                if(strlen($phnNum)!=11){
-                    $phnNumErr="Phone number is invalid";
-                    $regValid=false;
-                }
-            }
-
-            if(empty($_POST["BAddress"])){
-                $bAddressErr="Address is required";
-                $regValid=false;
-            }
-            else{
-                $bAddress=clean_input($_POST["BAddress"]);
-            }
+           
             if($regValid==true){
                 $hashpass=password_hash($pass,PASSWORD_DEFAULT);
                 $sql="insert into logininfo (username, password, role) values ('$uName', '$hashpass', 'customer')";
