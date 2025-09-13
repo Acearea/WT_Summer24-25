@@ -3,7 +3,7 @@
 <head></head>
 <body>
     <?php
-        include "../Resources/config.php";
+        include "../../Resources/config.php";
         $uName=$pass=$cPass=$email=$phnNum=$bAddress="";
         $uNameErr=$passErr=$cPassErr=$emailErr=$phnNumErr=$bAddressErr="";
         $regValid=true;
