@@ -4,8 +4,8 @@
 <body>
     <?php
         include "../../Resources/config.php";
-        $uName=$pass=$cPass=$email=$phnNum=$bAddress="";
-        $uNameErr=$passErr=$cPassErr=$emailErr=$phnNumErr=$bAddressErr="";
+        $uName=$pass=$cPass="";
+        $uNameErr=$passErr=$cPassErr="";
         $regValid=true;
         $hashpass="";
         function clean_input($data)
@@ -68,19 +68,17 @@
            
             if($regValid==true){
                 $hashpass=password_hash($pass,PASSWORD_DEFAULT);
-                $sql="insert into logininfo (username, password, role) values ('$uName', '$hashpass', 'customer')";
+                $sql="insert into logininfo (username, password, role) values ('$uName', '$hashpass', 'admin')";
                 if($conn->query($sql)===true){
                     $tid=$conn->insert_id;
                     echo "Debug: Last inserted ID is $tid";
                     
-                    $sql="insert into customerinfo (id, name, password, email, phonenum, address) values('$tid', '$uName', '$hashpass', '$email', '$phnNum', '$bAddress')";
+                    $sql="insert into admininfo (id, name, password) values('$tid', '$uName', '$hashpass')";
                     if($conn->query($sql)===true){
-                        echo"<script> alert('Registration Successful'); window.location.href='../View/loginVw.php'</script>";
-                        exit();
+                        echo"<script> alert('Registration Successful');</script>";
                     }
-                    
                         else{
-                        echo"Connection error customer: ".$conn->error;
+                        echo"Connection error Admin: ".$conn->error;
                     }
                 }
                 else{
@@ -94,9 +92,6 @@
             document.getElementById('UNameErr').innerText = '$uNameErr';
             document.getElementById('PassErr').innerText = '$passErr';
             document.getElementById('CPassErr').innerText = '$cPassErr';
-            document.getElementById('EmailErr').innerText = '$emailErr';
-            document.getElementById('PhnNumErr').innerText = '$phnNumErr';
-            document.getElementById('BAddressErr').innerText = '$bAddressErr';
             </script>";
     ?>
 </body>
