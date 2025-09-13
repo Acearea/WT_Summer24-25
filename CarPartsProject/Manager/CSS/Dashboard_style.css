@@ -1,6 +1,8 @@
 body {
     font-family: Arial;
-    background-color: white;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
 }
 
 .dashboard {
@@ -10,6 +12,7 @@ body {
     background: whitesmoke;
     padding: 30px;
     border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .dashboard p {
     margin-bottom: 30px;
@@ -21,14 +24,15 @@ body {
     gap: 15px;
 }
 .btn {
-    background-color: rgb(75, 168, 245);
+    background-color: rgb(243, 143, 236);
     color: white;
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
     width: 100%;
 }
 .btn:hover {
-    background-color: #015fc3;
+    background-color: #ec5ae9;
 }

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Manager Dashboard</title>
-        <link rel="Styledheet" href="Dashboard_style.css">
+        <link rel="stylesheet" href="../CSS/Dashboard_style.css">
     </head>
 </html>
 <body>
