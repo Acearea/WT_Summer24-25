@@ -14,12 +14,12 @@
             <h3 class="formHeader">Login</h3>
             <!--Username-->
             <label for="Username">Username</label><br>
-            <input type="text" class = "inputField" name = "Username" placeholder="Username"><br>
-            <span class="errorSpan" id = "UNameErr">testU</span><br>
+            <input type="text" class = "inputField" name = "UName" placeholder="Username"><br>
+            <span class="errorSpan" id = "UNameErr"></span><br>
             <!--Password-->
             <label for="Password">Password</label><br>
             <input type="password" class="inputField" name="Password" id="Password" placeholder="Password"><br>
-            <span class="errorSpan" id = "PassErr">testP</span><br>
+            <span class="errorSpan" id = "PassErr"></span><br>
             <!--Submit Button-->
             <button type="submit" class="submitBtn">Login</button>
         </form>
