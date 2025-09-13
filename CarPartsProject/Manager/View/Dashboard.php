@@ -10,7 +10,7 @@
         <h1>Manager Dashboard</h1>
         <p>Welcome, Please select an action:</p>
         <div class="button-grid">
-            <form action="Approve_orders.php" method="POST">
+            <form action="Approve_orders_view.php" method="post">
                 <button type="submit" class="btn">Approve/Reject purchase Order</button>
             </form>
             <form action="Supplier_report.php" method="POST">
