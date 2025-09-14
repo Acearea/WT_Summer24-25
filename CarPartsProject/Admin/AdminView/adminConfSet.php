@@ -11,10 +11,13 @@
             <a href="adminRestore.php"><button class="menuBtn" id="restoreDbBtn">Restore Database</button></a>
             <a href="adminViewlog.php"><button class="menuBtn" id="viewLogBtn">View Login</button></a>
             <a href="adminBlkData.php"><button class="menuBtn" id="bulkDataBtn">Bulk Data Export/Import</button></a>
-            <a href="adminConfSet.php"><button class="menuBtn" id="configSettingBtn">Configure System Settings</button></a>
+            <a href="adminConfSet.php"><button class="menuBtnAct" id="configSettingBtn">Configure System Settings</button></a>
         </div>
-        <div class="contentHome" id="contentArea">
-            <p>Welcome to the Admin Dashboard. Select an option from the menu.</p>
+        <div class="contentHome">
+            
         </div>
+        <?php
+
+        ?>
     </body>
 </html>
