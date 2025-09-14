@@ -19,7 +19,7 @@
             <form action="Adjust_Part_Sale_Prices_view.php" method="POST">
                 <button type="submit" class="btn">Adjust Parts Sale Price</button>
             </form>
-            <form action="Authorize_returns.php" method="POST">
+            <form action="Customers_return_view.php" method="POST">
                 <button type="submit" class="btn">Authorize Customer Returns</button>
             </form>
             <form action="Summary_report.php" method="POST">
