@@ -16,7 +16,7 @@
             <form action="Reorder_levels_view.php" method="POST">
                 <button type="submit" class="btn">Set Parts Reorder Levels</button>
             </form>
-            <form action="Adjust_price.php" method="POST">
+            <form action="Adjust_Part_Sale_Prices_view.php" method="POST">
                 <button type="submit" class="btn">Adjust Parts Sale Price</button>
             </form>
             <form action="Authorize_returns.php" method="POST">

@@ -22,7 +22,7 @@ body {
     gap: 15px;
 }
 .btn {
-    background-color: rgb(243, 143, 236);
+    background-color: rgb(20, 156, 190);
     color: white;
     padding: 15px;
     border-radius: 10px;
@@ -32,5 +32,5 @@ body {
     width: 100%;
 }
 .btn:hover {
-    background-color: #ec5ae9;
+    background-color: #5d47ee;
 }
