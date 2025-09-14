@@ -14,7 +14,7 @@
             <a href="adminConfSet.php"><button class="menuBtn" id="configSettingBtn">Configure System Settings</button></a>
         </div>
         <div class="contentHome">
-            
+            <h2>View Log</h2>
         </div>
         <?php
 

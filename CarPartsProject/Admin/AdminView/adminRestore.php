@@ -62,6 +62,7 @@ if (is_dir($backupDir)) {
             <a href="adminConfSet.php"><button class="menuBtn" id="configSettingBtn">Configure System Settings</button></a>
         </div>
         <div class="contentHome">
+            <h2>Restore Database</h2>
             <form method="POST">
                 <label>Select a Backup File to Restore</label>
                 <select id="backupFile" name="backupFile" required>
