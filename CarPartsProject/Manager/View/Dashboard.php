@@ -22,7 +22,7 @@
             <form action="Customers_return_view.php" method="POST">
                 <button type="submit" class="btn">Authorize Customer Returns</button>
             </form>
-            <form action="Summary_report.php" method="POST">
+            <form action="Summary_report_view.php" method="POST">
                 <button type="submit" class="btn">Generate Summary Reports</button>
             </form>
             <form action="Stock_categories.php" method="POST">
