@@ -16,18 +16,6 @@
             <form action="Reorder_levels_view.php" method="POST">
                 <button type="submit" class="btn">Set Parts Reorder Levels</button>
             </form>
-            <form action="Adjust_Part_Sale_Prices_view.php" method="POST">
-                <button type="submit" class="btn">Adjust Parts Sale Price</button>
-            </form>
-            <form action="Customers_return_view.php" method="POST">
-                <button type="submit" class="btn">Authorize Customer Returns</button>
-            </form>
-            <form action="Summary_report_view.php" method="POST">
-                <button type="submit" class="btn">Generate Summary Reports</button>
-            </form>
-            <form action="Stock_categories.php" method="POST">
-                <button type="submit" class="btn">Manage Parts Stock Categories</button>
-            </form>
 
         </div>
     </div>
